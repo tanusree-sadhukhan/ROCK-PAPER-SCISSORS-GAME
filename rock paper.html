@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    
+    <title>Document</title>
+    <style>
+        h1{
+            text-transform: uppercase;
+            color: white;
+            background-color: rgb(4, 4, 68);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+             gap:30px;
+             margin-top:100px ;
+            
+        }
+        .choice{
+            display: inline-block;
+            justify-content: center;
+             height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            object-fit: cover;
+           
+           
+            
+        }
+        .choice:hover{
+          border: 3px solid black;
+        
+        }
+     
+      img{
+             height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            object-fit: cover;
+      }
+      
+      .score-board{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 50px;
+        font-size: larger;
+        font-weight: bold;
+    }
+    #userscore,#compscore{
+        font-size: 60px;
+        font-weight: normal;
+    }
+         
+          
+            #msg{
+                height: 30px;
+                width: 200px;
+                background-color: rgb(4, 4, 68);
+                color: aliceblue;
+                border-radius: 5px;
+                display: inline-block;
+                padding-top: 20px;
+                padding-left: 50px;
+               
+                margin-left: 650px;
+                margin-top: 40px;
+                font-size: 20px;
+                line-height: 15px;
+            }
+         
+        
+            
+          
+            
+        
+    </style>
+</head>
+<body>
+    <h1>ROCK PAPER scissors</h1>
+    <div class="content">
+        <div class="choice" id="rock">
+            <img id="rock" src="rock.jpg">
+        </div>
+                <div class="choice"id="paper">
+            <img id="paper" src="paper.jpg">
+        </div>
+                 <div class="choice" id="scissors">
+            <img id="scissors" src="Scissors.jpg">
+        </div>
+        </div>
+      <div class="score-board"> 
+  <div class="score">
+        <p id="userscore">0</p>
+        <p>YOU</p>
+  </div>
+  <div class="score">
+        <p id="compscore">0</p>
+        <p>COMP</p>
+  </div>
+  </div> 
+        <div id="msg">
+            START PLAYING
+        </div>
+            <script src="rck paper.js"></script>
+            
+      
+        
+</body>
+</html>
